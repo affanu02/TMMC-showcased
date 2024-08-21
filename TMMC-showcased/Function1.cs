@@ -35,7 +35,7 @@ namespace ImageProcessingFunction
             if (string.IsNullOrEmpty(imagePath))
             {
                 var response = req.CreateResponse(System.Net.HttpStatusCode.BadRequest);
-                await response.WriteStringAsync("Error: Invalid number of arguments. Please input the file address as an argument.");
+                await response.WriteStringAsync("Error: Invalid number of arguments. Please input the file address as an argument as so: https://tmmc-test-affan-khan.azurewebsites.net/api/Function1?imagePath=online-path-to-image");
                 return response;
             }
 
